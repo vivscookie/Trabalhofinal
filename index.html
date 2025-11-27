@@ -4,44 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="custom.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <title>Aluga Tuga - Início</title>
 </head>
 
 <body>
+    <!--menu de navegação-->
     <nav class="navbar navbar-expand-lg bg-tertiary">
         <a class="navbar-brand" href="#">
-      <img src="imagens/mcqueen.png" alt="Logo" width="30" height="auto" class="d-inline-block align-text-top">
-      AlugaTuga
-             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Dúvidas</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <img src="imagens/mcqueen.png" alt="Logo" width="30" height="auto" class="d-inline-block align-text-center">
+            AlugaTuga
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Dúvidas</a>
+                </li>
+            </ul>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
         </div>
     </nav>
+    <!--carrossel-->
+
+    <!--barra de busca-->
+    <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+            <div class="input-group">
+                <label class="input-group-text" for="inputGroupSelect01"><svg xmlns="http://www.w3.org/2000/svg"
+                        width=1em height=1em fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>Local de retirada</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Agências</option>
+                    <option value="1">Lisboa - Aeroporto Humberto Delgado (LIS)</option>
+                    <option value="2">Aeroporto de Sevilha (SVQ)</option>
+                    <option value="3">Paris - Aeroporto Charles de Gaulle (CDG)</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-date">
+                
+            </div>
+        </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                    Motorista maior de 25 anos
+                </label>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
 
 </body>
 
