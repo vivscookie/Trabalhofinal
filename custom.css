@@ -71,6 +71,7 @@ body{
     font-style: normal;
 }
 
+
 .content{
     width: 100vw;
     min-height: 100vh;
@@ -130,18 +131,11 @@ body{
 .container .rollers .wrapper .items-container.roll-LL{
     animation-name: roll;
 }
-.container .rollers .wrapper .items-container.roll-RL{
-    animation-name: roll-reverse;
-    left: 100%;
-}
 .container .rollers .wrapper .items-container.reverse-roll-LL{
     animation-name: roll-clockwise;
     left: -100%;
 }
-.container .rollers .wrapper .items-container.reverse-roll-RL{
-    animation-name: roll-reverse-clockwise;
-    left: 100%;
-}
+
 
 @keyframes roll {
     0%{
@@ -217,3 +211,4 @@ body{
         opacity: 0.4;
     }
 }
+

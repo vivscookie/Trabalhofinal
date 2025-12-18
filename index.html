@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Dúvidas</a>
+                        <a class="nav-link" href="#">Dúvidas</a>
                     </li>
                 </ul>
             </div>
@@ -231,6 +231,7 @@
             </div>
         </div>
     </section>
+    <!--Rodapé-->
     <section>
         <div class="ftr bg-secondary">
             <div class="container">
@@ -330,15 +331,6 @@
         }, function (start, end, label) {
             console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
         });
-        /*✔ O que este script faz?
-        
-        Espera o clique no botão Buscar
-        
-        Impede reload da página (preventDefault)
-        
-        Insere, dentro da <div id="resultados-carros">, três cards de carros
-        
-        Mostra com efeito fadeIn*/
         $(document).ready(function () {
             $("#btnBuscarCarros").on("click", function (e) {
                 e.preventDefault();
@@ -347,33 +339,33 @@
             <div class="row g-3">
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200?text=Econ%C3%B4mico" class="card-img-top">
+                        <img src="./imagens/ruivo.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Carro Econômico</h5>
+                            <h5 class="card-title">Ruivo</h5>
                             <p class="card-text">2 portas • Ar condicionado • Manual</p>
-                            <button class="btn btn-primary w-100">Selecionar</button>
+                            <button class="btn btn-secondary w-100">Reservar</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200?text=Sedan" class="card-img-top">
+                        <img src="./imagens/mack.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Sedan Médio</h5>
-                            <p class="card-text">4 portas • Ar condicionado • Automático</p>
-                            <button class="btn btn-primary w-100">Selecionar</button>
+                            <h5 class="card-title">Mack</h5>
+                            <p class="card-text">2 portas • Ar condicionado • Manual</p>
+                            <button class="btn btn-secondary w-100">Selecionar</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/350x200?text=SUV" class="card-img-top">
+                        <img src="./imagens/sarge.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">SUV</h5>
-                            <p class="card-text">5 lugares • Grande porta-malas • Automático</p>
-                            <button class="btn btn-primary w-100">Selecionar</button>
+                            <h5 class="card-title">Sargento</h5>
+                            <p class="card-text">5 lugares • Grande porta-malas • Manual</p>
+                            <button class="btn btn-secondary w-100">Selecionar</button>
                         </div>
                     </div>
                 </div>
