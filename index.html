@@ -123,7 +123,7 @@
                                 enferrujada,
                                 um sotaque diferente e um coração enorme, sempre disposto a ajudar.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Tom Mate">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,8 @@
                                 junto
                                 com vários adesivos e foi inspirado no Buick Regal.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn"
+                                data-nome="Chick Hicks">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +154,7 @@
                             <p class="card-text flex-grow-1">
                                 A Kombi hippie dos anos 1960, com pinturas coloridas e vibe de paz, calma e liberdade.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Fillmore">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -167,7 +168,7 @@
                             <p class="card-text flex-grow-1">
                                 Inspirada no Porsche 911 Carrera, Sally é veloz, gentil e muito inteligente.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Sally">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +182,7 @@
                             <p class="card-text flex-grow-1">
                                 O pequeno carro azul inspirado no Romi-Isetta, ágil e muito simpático.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Guido">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +196,7 @@
                             <p class="card-text flex-grow-1">
                                 Inspirado no Impala, estiloso, colorido e especialista em pintura automotiva.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Ramone">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +210,8 @@
                             <p class="card-text flex-grow-1">
                                 O famoso número 95, inspirado no Corvette C6. "Ka-chow!"
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn"
+                                data-nome="Relâmpago McQueen">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +225,7 @@
                             <p class="card-text flex-grow-1">
                                 A clássica viatura dos anos 1940, inspirada no Mercury Eight.
                             </p>
-                            <a href="#" class="btn btn-secondary mt-auto">Reservar</a>
+                            <a href="#" class="btn btn-secondary mt-auto reservar-btn" data-nome="Xerife">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -239,6 +241,7 @@
                     <footer>
                         <div class="row">
                             <div class="col-4 p-3">
+                                <img src="imagens/alugatuga.png" style="width:75px; height: 75px;">
                                 <address>
                                     <h3>Aluga Tuga</h3>
                                     Radiator Springs<br>Condado Carburador<br>Rota 66
@@ -343,7 +346,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ruivo</h5>
                             <p class="card-text">2 portas • Ar condicionado • Manual</p>
-                            <button class="btn btn-secondary w-100">Reservar</button>
+                            <button class="btn btn-secondary w-100 reservar-btn" data-nome="Ruivo">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -354,7 +357,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Mack</h5>
                             <p class="card-text">2 portas • Ar condicionado • Manual</p>
-                            <button class="btn btn-secondary w-100">Selecionar</button>
+                            <button class="btn btn-secondary w-100 reservar-btn" data-nome="Mack">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -365,7 +368,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Sargento</h5>
                             <p class="card-text">5 lugares • Grande porta-malas • Manual</p>
-                            <button class="btn btn-secondary w-100">Selecionar</button>
+                            <button class="btn btn-secondary w-100 reservar-btn" data-nome="Sargento">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -373,6 +376,13 @@
         `;
 
                 $("#resultados-carros").html(carrosHTML).hide().fadeIn(400);
+            });
+
+            // Event listener para botões Reservar
+            $(document).on("click", ".reservar-btn", function (e) {
+                e.preventDefault();
+                const nomeCarro = $(this).data("nome");
+                window.location.href = `Detalhe.html?carro=${encodeURIComponent(nomeCarro)}`;
             });
         });
     </script>

@@ -1,5 +1,5 @@
 /* definindo variáveis para cores */
-:root{
+:root {
     --primary: #C4F7A1;
     --secondary: #5C573E;
     /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
@@ -9,106 +9,121 @@
     --warning: #E55812;
     --danger: #E55812;
 }
+
 /* sobrescrevendo classes padrão do Bootstrap */
 /* a marcação !important dá um peso maior a regra, sobrescrevendo regras prévias */
-.bg-primary, .btn-primary{
+.bg-primary,
+.btn-primary {
     background-color: var(--primary) !important;
 }
-.bg-secondary, .btn-secondary{
+
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary) !important;
 }
-.bg-tertiary, .btn-tertiary{
+
+.bg-tertiary,
+.btn-tertiary {
     background-color: var(--tertiary) !important;
 }
-.bg-success, .btn-success{
+
+.bg-success,
+.btn-success {
     background-color: var(--success) !important;
 }
-.bg-info, .btn-info{
+
+.bg-info,
+.btn-info {
     background-color: var(--info) !important;
 }
-.bg-warning, .btn-warning{
+
+.bg-warning,
+.btn-warning {
     background-color: var(--warning) !important;
 }
-.bg-danger .btn-danger{
+
+.bg-danger .btn-danger {
     background-color: var(--danger) !important;
 }
-body{
+
+body {
     background-color: #C4F7A1;
 }
+
 .grandstander {
-  font-family: "Grandstander", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Grandstander", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .happy-monkey-regular {
-  font-family: "Happy Monkey", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.card-title{
+.card-title {
     font-family: "Grandstander", system-ui;
     font-weight: 800;
-    font-style:normal;
-}
-.card-text, address, #buscador{
-    font-family: "Happy Monkey", system-ui;
-    font-weight: 400;
-    font-style:normal;
+    font-style: normal;
 }
 
-.btn-secondary, h3{
+.card-text,
+address,
+#buscador {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+address {
+    color: #F4EFF0;
+}
+
+.btn-secondary,
+h3 {
     font-family: "Grandstander", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
+#infocar {
+    background-image: url(imagens/radiatorspringsop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.content{
+}
+
+p {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
     width: 100vw;
     min-height: 100vh;
 }
 
-.content .container{
+.content .container {
     padding-top: 30px;
     padding-bottom: 20px;
-    box-shadow: 2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;
+    box-shadow: 2px 15px 20px #1f1f1f10, -2px -8px 20px #1f1f1f1a;
 }
 
 
-.container .rollers{
+.container .rollers {
     flex: 0 0 230px;
 }
 
-.container .start-roller{
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(to right, #5C573E 40%, #ffffff00);
-}
-
-.container .start-roller,
-.container .end-roller{
-    height: 100%;
-    width: 40px;
-    position: absolute;
-    z-index: 1;
-}
-
-.container .end-roller{
-    right: 0;
-    top: 0;
-    background-image: linear-gradient(to left, #5C573E 40%,  rgba(255, 255, 255, 0));
-}
-
-.container .rollers .wrapper{
+.container .rollers .wrapper {
     position: relative;
     width: 1800px;
     height: 200px;
@@ -116,7 +131,7 @@ body{
     flex: 0 0 auto;
 }
 
-.container .rollers .wrapper .items-container{
+.container .rollers .wrapper .items-container {
     display: flex;
     align-items: center;
     position: absolute;
@@ -127,88 +142,101 @@ body{
     animation-timing-function: linear;
 }
 
-
-.container .rollers .wrapper .items-container.roll-LL{
+.container .rollers .wrapper .items-container.roll-LL {
     animation-name: roll;
 }
-.container .rollers .wrapper .items-container.reverse-roll-LL{
+
+.container .rollers .wrapper .items-container.reverse-roll-LL {
     animation-name: roll-clockwise;
     left: -100%;
 }
 
-
 @keyframes roll {
-    0%{
+    0% {
         left: 0%;
     }
-    100%{
+
+    100% {
         left: -100%;
     }
 }
+
 @keyframes roll-reverse {
-    0%{
+    0% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
+
 @keyframes roll-clockwise {
-    0%{
+    0% {
         left: -100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
+
 @keyframes roll-reverse-clockwise {
-    0%{
+    0% {
         left: 0%;
     }
-    100%{
+
+    100% {
         left: 100%;
     }
 }
 
-
-.container .rollers .wrapper .items-container .item{
+.container .rollers .wrapper .items-container .item {
     flex: 1 1 200px;
     min-width: 0;
     margin: 20px;
 }
 
-.container .rollers .wrapper .items-container .item .company{
+.container .rollers .wrapper .items-container .item .company {
     filter: grayscale(100%);
     opacity: 0.2;
     width: 100%;
     object-fit: contain;
 }
 
-.container .rollers .wrapper .items-container .item .company:hover{
+.container .rollers .wrapper .items-container .item .company:hover {
     filter: grayscale(0%);
     opacity: 1;
     cursor: pointer;
 }
 
-.container img{
+.container img {
     vertical-align: middle;
 }
 
 @media (max-width: 575.5px) {
-    .content{
+    .content {
         padding: 20px;
     }
-    .content .container{
+
+    .content .container {
         padding: 20px;
     }
-    .h3{
+
+    .h3 {
         font-size: calc(1.1rem + .6vw);
     }
+
     .fs-5 {
-        font-size: 0.9rem!important;
+        font-size: 0.9rem !important;
     }
-    .container .rollers .wrapper .items-container .item .company{
+
+    .container .rollers .wrapper .items-container .item .company {
         opacity: 0.4;
     }
 }
 
+.ftr {
+    background-image: url(imagens/wp6654577-2123060665.jpg);
+    background-blend-mode: multiply;
+}
