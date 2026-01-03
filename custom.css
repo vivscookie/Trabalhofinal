@@ -406,11 +406,18 @@ p {
     transition: 0.5s;
 }
 
-.card1:hover img {
-    height: 250px;
+.card1:hover img{
+    height: auto;
     width: 300px;
     top: -20%;
     right: -20%
+}
+
+#cardb:hover img{
+    height:auto;
+    width: 200px;
+    top: -10%;
+    right: -10%
 }
 
 .card1 .content {

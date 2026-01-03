@@ -391,6 +391,8 @@
             $(document).on("click", ".reservar-btn", function (e) {
                 e.preventDefault();
                 const nomeCarro = $(this).data("nome");
+                var audio = new Audio('audio/racecar.mp3');
+                audio.play();
                 window.location.href = `Detalhe.html?carro=${encodeURIComponent(nomeCarro)}`;
             });
         });
