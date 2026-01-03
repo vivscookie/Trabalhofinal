@@ -28,6 +28,8 @@ Projeto final da unidade curricular DWFE.
 [Apresentação de parceiros](https://bbbootstrap.com/snippets/bootstrap-5-ecommerce-product-card-hover-effect-animation-96798616)
 
 [Roller de logos](https://bbbootstrap.com/snippets/bootstrap-5-rolling-images-animation-33714815)
+
+[Calendário com faixa de datas](https://www.daterangepicker.com/).
 ## Autoras
 
 - [@vivscookie](https://www.github.com/vivscookie)
