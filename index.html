@@ -280,14 +280,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-around align-items-start">
-                            <ul>
-                                <li id="social"><i class="fa fa-facebook fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-twitter fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-linkedin fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-instagram fa-2x"></i></li>
-                            </ul>
-                        </div>
                 </div>
                 </footer>
             </div>
@@ -391,8 +383,6 @@
             $(document).on("click", ".reservar-btn", function (e) {
                 e.preventDefault();
                 const nomeCarro = $(this).data("nome");
-                var audio = new Audio('audio/racecar.mp3');
-                audio.play();
                 window.location.href = `Detalhe.html?carro=${encodeURIComponent(nomeCarro)}`;
             });
         });

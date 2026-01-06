@@ -13,7 +13,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Happy+Monkey&family=Racing+Sans+One&display=swap');
     </style>
-    <title>Detalhes</title>
+    <title id="carro-nome"></title>
+    <link rel="icon" type="image/x-icon" href="/images/alugatuga.png">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <!--menu de navegação-->
     <nav class="navbar navbar-expand-lg bg-tertiary">
         <div class="container">
-            <a class="navbar-brand grandstander" href="index.html">
+            <a class="navbar-brand grandstander" href="#index.html">
                 <img src="imagens/alugatuga.png" alt="Logo" width="30" height="auto"
                     class="d-inline-block align-text-center">
                 AlugaTuga
@@ -33,22 +34,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav happy-monkey-regular">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Carros</a>
+                        <a class="nav-link" href="parceiros.html">Parceiros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas</a>
+                        <a class="nav-link" href="autoras.html">Autoras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dúvidas</a>
+                        <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row d-flex justify-content-evenly">
             <div class="col-md-6">
                 <img id="carro-imagem" src="imagens/mcqueen.png" class="img-fluid rounded" alt="Carro"
@@ -96,20 +97,20 @@
             </div>
         </div>
     </div>
-<section>
+    <section>
         <div class="ftr bg-secondary">
             <div class="container">
                 <div class="row">
                     <footer>
                         <div class="row">
-                            <div class="col-4 pt-3">
+                            <div class="col-4 p-3">
                                 <img src="imagens/alugatuga.png" style="width:75px; height: 75px;">
                                 <address>
                                     <h3>Aluga Tuga</h3>
                                     Radiator Springs<br>Condado Carburador<br>Rota 66
                                 </address>
                             </div>
-                            <div class=" col-8 p-3">
+                            <div class=" col-8 pt-3">
                                 <div class="container">
                                     <div class="align-items-center justify-content-center">
                                         <div class="rollers position-relative overflow-hidden">
@@ -140,14 +141,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="container d-flex justify-content-around align-items-start">
-                            <ul>
-                                <li id="social"><i class="fa fa-facebook fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-twitter fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-linkedin fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-instagram fa-2x"></i></li>
-                            </ul>
                         </div>
                 </div>
                 </footer>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
@@ -48,8 +49,34 @@
                 </ul>
             </div>
     </nav>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.8816103209983!2d-96.0049387252857!3d36.14509577244117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87da551856122831%3A0xfcbb87f98772852f!2sU.S.%20Rte%2066%2C%20Estados%20Unidos!5e0!3m2!1spt-BR!2spt!4v1767395010572!5m2!1spt-BR!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<section>
+    <div class="container row m-5 pb-3">
+        <div class="col">
+            <h2 class="grandstander">Contacte-nos</h2>
+            <form class="happy-monkey-regular">
+                <div class="input-group mb-3">
+                    <span for="nome" class="input-group-text">Nome:</span>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="input-group mb-3">
+                    <span for="email" class="input-group-text">Email:</span>
+                    <input type="email" class="form-control" id="email" placeholder="Seu email">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Mensagem</span>
+                    <textarea class="form-control" aria-label="Área de texto" id="msg"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary mt-3">Enviar</button>
+            </form>
+            <div class="container">
+                <a class="icon-link bi bi-instagram" href="https://www.instagram.com/vivs.tradutora/"></a>
+                <a class="icon-link bi bi-whatsapp" href="https://api.whatsapp.com/send?phone=5515997354695"></a>
+            </div>
+        </div>
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6443.763201948843!2d-96.002364!3d36.145096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87da551856122831%3A0xfcbb87f98772852f!2sU.S.%20Rte%2066%2C%20Estados%20Unidos!5e0!3m2!1spt-BR!2spt!4v1767565723067!5m2!1spt-BR!2spt" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <section>
         <div class="ftr bg-secondary">
             <div class="container">
                 <div class="row">
@@ -94,18 +121,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-around align-items-start">
-                            <ul>
-                                <li id="social"><i class="fa fa-facebook fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-twitter fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-linkedin fa-2x"></i></li>
-                                <li id="social"><i class="fa fa-instagram fa-2x"></i></li>
-                            </ul>
-                        </div>
                 </div>
                 </footer>
             </div>
         </div>
         </div>
     </section>
+     <script>
+        $("button").click(function () {
+            if ($("#nome,#email,#msg") != " ") {
+                alert("Mensagem enviada com sucesso!");
+            } else {
+                alert("Por favor, preencha todos os campos antes de enviar a mensagem.");
+            }
+        })
+    </script>
 </body>

@@ -97,6 +97,8 @@ address {
 .ftr {
     background-image: url(imagens/wp6654577-2123060665.jpg);
     background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Roller marcas*/
@@ -237,107 +239,7 @@ address {
         opacity: 0.4;
     }
 }
-/*Ícones redes sociais*/
-ul {
-    display: flex;
-    list-style: none
-}
 
-@media (max-width:700px) {
-    ul {
-        display: block
-    }
-}
-
-#social {
-    margin: 10px;
-    height: 70px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative
-}
-
-ul li i {
-    transition: all 0.3s linear
-}
-
-ul li::after {
-    content: "";
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    border-radius: 3px;
-    background-color: red;
-    opacity: 0;
-    z-index: -1;
-    color: #fff;
-    transition: all 0.3s linear
-}
-
-ul li:hover i {
-    color: #fff;
-    font-size: 17px
-}
-
-ul li:hover::after {
-    opacity: 1;
-    transform: scale(0.8)
-}
-
-ul li::after {
-    content: "";
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    border-radius: 3px;
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.3s linear
-}
-
-#social:nth-child(1) {
-    border: 2px solid #3b5998;
-    color: #3b5998
-}
-
-#social:nth-child(1)::after {
-    background-color: #3b5998;
-    color: #3b5998
-}
-
-#social:nth-child(2) {
-    border: 2px solid #00aced;
-    color: #00aced
-}
-
-#social:nth-child(2)::after {
-    background-color: #00aced;
-    color: #00aced
-}
-
-#social:nth-child(3) {
-    border: 2px solid #007bb6;
-    color: #007bb6
-}
-
-#social:nth-child(3)::after {
-    background-color: #007bb6;
-    color: #007bb6
-}
-
-#social:nth-child(4) {
-    border: 2px solid #dd4b39;
-    color: #dd4b39
-}
-
-#social:nth-child(4)::after {
-    background-color: #dd4b39;
-    color: #dd4b39
-}
 /*detalhes carro*/
 #infocar {
     background-image: url(imagens/radiatorspringsop.png);
@@ -350,6 +252,11 @@ p {
     font-family: "Happy Monkey", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+/*Ícones redes autoras*/
+.icon-link{
+    text-decoration: none;
 }
 
 /*Parceiros*/
@@ -433,20 +340,6 @@ p {
 
 .content p {
     font-size: 13px
-}
-
-.content button {
-    width: 90px;
-    height: 35px;
-    border: none;
-    background-color: #0000ffb8;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 4px
-}
-
-.content button:hover {
-    background-color: blue
 }
 
 .card1:hover .content {
